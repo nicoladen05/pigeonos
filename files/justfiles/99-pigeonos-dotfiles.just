@@ -6,11 +6,11 @@ install-dotfiles-zed:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    mkdir -p "$HOME/.config/zed"
+    mkdir -p "$HOME/.var/app/dev.zed.Zed/config/zed"
 
-    if [ -d /etc/skel/.config/zed ]; then
-        cp -r /etc/skel/.config/zed/. "$HOME/.config/zed/"
+    if [ -d /etc/skel/.var/app/dev.zed.Zed/config/zed ]; then
+        cp -r /etc/skel/.var/app/dev.zed.Zed/config/zed/. "$HOME/.var/app/dev.zed.Zed/config/zed/"
     else
-        echo "/etc/skel/.config/zed does not exist"
+        echo "/etc/skel/.var/app/dev.zed.Zed/config/zed does not exist"
         exit 1
     fi
