@@ -1,7 +1,7 @@
 [group('PigeonOS')]
-
 install-dotfiles: install-dotfiles-zed
 
+[group('PigeonOS')]
 install-dotfiles-zed:
     #!/usr/bin/env bash
     set -euo pipefail
