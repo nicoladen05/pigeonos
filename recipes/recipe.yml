@@ -15,4 +15,10 @@ modules:
   - type: justfiles
     validate: true
 
+  - type: os-release
+    properties:
+      ID: pigeonos
+      NAME: "PigeonOS"
+      PRETTY_NAME: "PigeonOS"
+
   - type: signing
