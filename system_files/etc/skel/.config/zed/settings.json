@@ -1,0 +1,35 @@
+{
+  "buffer_line_height": "comfortable",
+  "edit_predictions": {
+    "mode": "subtle",
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "reportAny": false,
+      },
+    },
+    "nixd": {
+      "settings": {
+        "home-manager": {
+          "expr": "(builtins.getFlake (builtins.toString ./.)).homeConfigurations.nico.options",
+        },
+        "nixos": {
+          "expr": "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.desktop.options",
+        },
+      },
+    },
+    "rust-analyzer": {
+      "enable_lsp_tasks": true,
+    },
+  },
+  "relative_line_numbers": "enabled",
+  "show_edit_predictions": true,
+  "tabs": {
+    "file_icons": true,
+  },
+  "terminal": {
+    "dock": "right",
+  },
+  "vim_mode": true,
+}

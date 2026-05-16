@@ -1,0 +1,56 @@
+[
+  {
+    "bindings": {
+      "e": "vim::Up",
+      "i": "vim::Right",
+      "j": "vim::MoveToNextMatch",
+      "k": "vim::InsertBefore",
+      "l": "vim::NextWordEnd",
+      "n": "vim::Down",
+      "shift-e": "editor::Hover",
+      "shift-j": "vim::MoveToPreviousMatch",
+      "shift-k": "vim::InsertFirstNonWhitespace",
+      "shift-l": [
+        "vim::NextWordEnd",
+        {
+          "ignore_punctuation": true
+        }
+      ],
+      "shift-n": "vim::JoinLines"
+    },
+    "context": "vim_mode == normal || vim_mode == visual"
+  },
+  {
+    "bindings": {
+      "k": [
+        "vim::PushObject",
+        {
+          "around": false
+        }
+      ]
+    },
+    "context": "vim_mode == operator"
+  },
+  {
+    "bindings": {
+      "shift-s": "vim::PushAddSurrounds"
+    },
+    "context": "vim_mode == visual"
+  },
+  {
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-b": "workspace::ToggleLeftDock",
+      "ctrl-c": "editor::Copy",
+      "ctrl-f": "buffer_search::Deploy",
+      "ctrl-o": "workspace::Open",
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-r": "projects::OpenRecent",
+      "ctrl-s": "workspace::Save",
+      "ctrl-t": "project_symbols::Toggle",
+      "ctrl-x": "editor::Cut",
+      "ctrl-y": "editor::Undo"
+    },
+    "context": "Editor && !menu"
+  }
+]
