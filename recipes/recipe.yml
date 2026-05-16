@@ -7,6 +7,19 @@ base-image: ghcr.io/ublue-os/bazzite-nvidia-open
 image-version: stable
 
 modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - scottames/ghostty
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - ghostty
+        - zed
+        - zsh
+
   - type: files
     files:
       - source: system
