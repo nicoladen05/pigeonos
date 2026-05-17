@@ -1,4 +1,5 @@
 {
+  "base_keymap": "JetBrains",
   "buffer_line_height": "comfortable",
   "edit_predictions": {
     "mode": "subtle",
